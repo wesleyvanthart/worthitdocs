@@ -6,7 +6,7 @@ $(document).ready(function() {
     if (Webflow.env('editor') != undefined) {
       console.log('Editor is loaded: do not load custom js');
     } else {
-      $('body').after('<script src="https://cdn.jsdelivr.net/gh/locomotivemtl/locomotive-scroll/dist/locomotive-scroll.min.js?n=1"></script>');
+      $('.endtag').after('<script src="https://cdn.jsdelivr.net/gh/locomotivemtl/locomotive-scroll/dist/locomotive-scroll.min.js?n=1"></script>');
       $('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/locomotivemtl/locomotive-scroll/dist/locomotive-scroll.css">');
 
       console.log('append after')
@@ -40,5 +40,3 @@ $(document).ready(function() {
             })();
     } 
 })
-
-
